@@ -1,0 +1,10 @@
+\xpg@aux {}{french}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Imports}{1}{section.2}%
+\contentsline {section}{\numberline {3}Ouverture du fichier et extraction des colonnes}{2}{section.3}%
+\contentsline {section}{\numberline {4}Obtention de l'allure de la montée et de la descente}{2}{section.4}%
+\contentsline {section}{\numberline {5}Tentative d'obtention de la vitesse}{3}{section.5}%
+\contentsline {section}{\numberline {6}Tentative d'obtention du temps d'escalade}{5}{section.6}%
+\contentsline {section}{\numberline {7}Calcul du ratio temps de mouvements sur temps total}{5}{section.7}%
+\contentsline {section}{\numberline {8}Tentative d'obtention de la hauteur du mur}{6}{section.8}%
+\contentsline {section}{\numberline {9}Conclusion}{7}{section.9}%
