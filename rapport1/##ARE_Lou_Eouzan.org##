@@ -1,0 +1,156 @@
+#+TITLE: Rapport d'analyse
+#+AUTHOR: Votre Nom
+#+LATEX_HEADER: \usepackage[margin=2cm]{geometry}
+#+LATEX_HEADER: \usepackage{listings}
+#+LATEX_HEADER: \lstset{language=Python, basicstyle=\ttfamily\small, breaklines=true, frame=single, keywordstyle=\color{blue}, commentstyle=\color{green!50!black}, stringstyle=\color{red}}
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \fancyhf{}
+#+LATEX_HEADER: \fancyhead[L]{\small\@author}
+#+LATEX_HEADER: \renewcommand{\headrulewidth}{0pt}
+#+LATEX_HEADER: \fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\small\@author}}
+#+OPTIONS: tex:t
+
+* Imports
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+%matplotlib ipympl
+
+from ipywidgets import *
+from matplotlib import pyplot as plt
+import numpy as np
+import pandas as pd
+import scipy
+#+END_SRC
+
+* Ouverture du fichier et extraction des colonnes
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+data = pd.read_csv("data2.csv")
+x = data["Linear Acceleration x (m/s^2)"]
+y = data["Linear Acceleration y (m/s^2)"]
+z = data["Linear Acceleration z (m/s^2)"]
+absolute = data["Absolute acceleration (m/s^2)"]
+time = data["Time (s)"]
+#+END_SRC
+
+* Démonstration du drift de la vitesse intégrée à partir de l'accélération
+
+Malheureusement les valeurs de l'accéléromètre ne sont pas centrées sur 0 au repos, ce qui signifie qu'en intégrant les dites valeurs pour obtenir les vitesses de la personne au fil du temps, on obtient un graphe avec un *drift*.
+
+#+CAPTION: Tentative pour déterminer les vitesses en intégrant les accélérations
+#+ATTR_LATEX: :width 5in
+[[file:/home/atellane/Documents/cours_fac/ARE/miaou/fig1.svg]]
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+def integrate(frame):
+    frame = scipy.integrate.cumulative_trapezoid(frame)
+    return frame
+
+x_speed, y_speed, z_speed = (integrate(frame) for frame in (x, y, z))
+speed = np.sqrt(x_speed**2 + y_speed**2 + z_speed**2)
+
+plt.close(1)
+fig = plt.figure(1)
+ax = fig.add_subplot()
+
+ax.plot(time[:-1], speed)
+ax.set_xlabel("time (s)")
+ax.set_ylabel("speed (m/s)")
+fig.savefig('fig1.svg')
+#+END_SRC
+
+* Filtrage du bruit pour obtenir une courbe potable
+
+Pour filtrer les données d'accélération et atténuer le bruit, on fait une moyenne glissante (aussi appelée "moyenne roulante").
+
+#+CAPTION: Accélérations au fil du temps avec les paramètres optimaux trouvés à la main
+#+ATTR_LATEX: :width 5in
+[[file:/home/atellane/Documents/cours_fac/ARE/miaou/fig2.svg]]
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+plt.close(2)
+fig2 = plt.figure(2)
+
+def update(n_glob=3200, thresh=1.05, remove_start=700):
+    fig2.clear()
+
+    ax2 = fig2.add_subplot()
+    ax2.set_title('global values')
+    ax3 = ax2.twinx()
+
+    ax2.set_xlabel("time (s)")
+    ax2.set_ylabel("acceleration (m/s^2)")
+    ax3.set_ylabel("acceleration (m/s^2) (smoothed)")
+
+    absolute_cp = np.copy(absolute)
+    absolute_cp[:remove_start] = 0
+    absolute_smooth = scipy.ndimage.uniform_filter1d(absolute_cp, size=n_glob)
+
+    _ = ax2.plot(time, absolute, alpha=0.5, color='red')
+    _ = ax3.plot(time, absolute_smooth, color='blue')
+
+    _ = ax3.plot(time, [thresh]*len(time), color='red')
+    
+    fig2.canvas.draw_idle()
+    fig2.savefig('fig2.svg')
+
+update()
+interact(update, n_glob=(100, 5000, 100), thresh=(0, 2, .05), remove_start=(0, len(time)-1, 100));
+#+END_SRC
+
+* Calcul du temps de grimpe
+
+Maintenant on peut regarder les intersections entre la droite d'équation \( y = \text{threshold} \), afin de trouver les instants de début et de fin de déplacement.
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+tps_grimpe = 193.5 - 33.9
+print(tps_grimpe)
+#+END_SRC
+
+#+RESULTS:
+: 159.6
+
+#+BEGIN_QUOTE
+=> 159.6 (s)
+#+END_QUOTE
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+tps_chute = 437.3 - 410.2
+#+END_SRC
+
+#+RESULTS:
+: 27.1
+
+#+BEGIN_QUOTE
+=> 27.1 (s)
+#+END_QUOTE
+
+Ce temps de chute est largement incohérent [...] 
+
+#+CAPTION: Zoom sur la partie du graphe concernant la chute
+#+ATTR_LATEX: :width 5in
+[[file:fig4.png]]
+
+* Calcul du ratio de temps en mouvement
+
+#+BEGIN_SRC python :exports code :eval never-export :tangle no
+n_glob = 3200
+thresh = 1.05
+remove_start = 700
+
+absolute_smooth = scipy.ndimage.uniform_filter1d(absolute, size=n_glob)
+
+moving_time = time[absolute_smooth > thresh]
+moving_ones = np.zeros(len(moving_time))
+
+moving_ratio = len(moving_time) / len(time) 
+print(f"{np.round(moving_ratio*100, 2)} %")
+#+END_SRC
+
+#+RESULTS:
+: 45.54 %
+
+#+BEGIN_QUOTE
+=> 45.54 %
+#+END_QUOTE

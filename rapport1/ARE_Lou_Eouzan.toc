@@ -1,0 +1,9 @@
+\xpg@aux {}{french}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Imports}{1}{section.2}%
+\contentsline {section}{\numberline {3}Ouverture du fichier et extraction des colonnes}{2}{section.3}%
+\contentsline {section}{\numberline {4}Tentative d'obtention de la vitesse intégrée à partir de l'accélération}{2}{section.4}%
+\contentsline {section}{\numberline {5}Filtrage du bruit pour obtenir une courbe potable}{3}{section.5}%
+\contentsline {section}{\numberline {6}Calcul du temps de grimpe}{5}{section.6}%
+\contentsline {section}{\numberline {7}Calcul du ratio de temps en mouvement}{6}{section.7}%
+\contentsline {section}{\numberline {8}Conclusion}{6}{section.8}%
