@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.3.24)  3 APR 2025 00:46
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.3.24)  29 APR 2025 18:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -689,26 +689,26 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 ) (.//ARE_Lou_Eouzan.aux)
 \openout1 = `ARE_Lou_Eouzan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -716,64 +716,64 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 46.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 46.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 46.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 46.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 46.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 46.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 46.
-LaTeX Font Info:    Redeclaring math accent \check on input line 46.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 46.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 46.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 46.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 46.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 45.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 45.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 45.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 45.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 45.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 45.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 45.
+LaTeX Font Info:    Redeclaring math accent \check on input line 45.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 45.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 45.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 45.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 45.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 46.
+(Font)              `operators' in the math version `normal' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LiberationSerif(0)/m/n on input line
- 46.
+ 45.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 46.
+(Font)              `operators' in the math version `bold' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LiberationSerif(0)/m/n on input lin
-e 46.
+e 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/LiberationSerif(0)/m/n --> TU/LiberationSerif(0)/m/n
- on input line 46.
+ on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/LiberationSerif(0)/m/it on input li
-ne 46.
+ne 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/LiberationSerif(0)/b/n on input lin
-e 46.
+e 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 46.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 46.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/LiberationSerif(0)/m/n --> TU/LiberationSerif(0)/b/n
- on input line 46.
+ on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/LiberationSerif(0)/b/it on input l
-ine 46.
+ine 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 46.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 45.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 46.
-Package hyperref Info: Link coloring OFF on input line 46.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
 (.//ARE_Lou_Eouzan.out) (.//ARE_Lou_Eouzan.out)
 \@outlinefile=\write5
 \openout5 = `ARE_Lou_Eouzan.out'.
@@ -813,12 +813,12 @@ Package hyperref Info: Link coloring OFF on input line 46.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -830,12 +830,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \pydata@fh@_5E0BE43A8BC44D647A97E66B3B044761.data.minted=\write7
 \openout7 = `_5E0BE43A8BC44D647A97E66B3B044761.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250403004649 5E0BE43A8BC44D647A97E6
+runsystem(latexminted config  --timestamp 20250429181229 5E0BE43A8BC44D647A97E6
 6B3B044761)...executed.
 
 
 (.//_5E0BE43A8BC44D647A97E66B3B044761.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250403004649 5E0BE43A8BC44D647
+runsystem(latexminted cleanconfig  --timestamp 20250429181229 5E0BE43A8BC44D647
 A97E66B3B044761)...executed.
 
 
@@ -849,7 +849,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
 [1
 
 ]) (./_minted/D4A953C7BEEB45A64DA9FE8D4C6B7CC1.highlight.minted)
-Package svg Info: Calling Inkscape on input line 117.
+Package svg Info: Calling Inkscape on input line 116.
 runsystem(inkscape "traj_montee.svg" -D --export-latex --export-filename="traj_
 montee_svg-tex.pdf")...executed.
 
@@ -862,7 +862,7 @@ runsystem(mv "traj_montee_svg-tex.pdf_tex" "./svg-inkscape/traj_montee_svg-tex.
 pdf_tex")...executed.
 
 Package svg Info: Last page of `./svg-inkscape/traj_montee_svg-tex.pdf' is 1 on
- input line 117.
+ input line 116.
 
 (././svg-inkscape/traj_montee_svg-tex.pdf_tex
 File: ./svg-inkscape/traj_montee_svg-tex.pdf Graphic file (type pdf)
@@ -870,13 +870,13 @@ File: ./svg-inkscape/traj_montee_svg-tex.pdf Graphic file (type pdf)
 )
 
 LaTeX Font Warning: Font shape `TU/LiberationSerif(0)/m/sc' undefined
-(Font)              using `TU/LiberationSerif(0)/m/n' instead on input line 118
+(Font)              using `TU/LiberationSerif(0)/m/n' instead on input line 117
 .
 
 
 
 [2]
-Package svg Info: Calling Inkscape on input line 122.
+Package svg Info: Calling Inkscape on input line 121.
 runsystem(inkscape "traj_descente.svg" -D --export-latex --export-filename="tra
 j_descente_svg-tex.pdf")...executed.
 
@@ -889,7 +889,7 @@ runsystem(mv "traj_descente_svg-tex.pdf_tex" "./svg-inkscape/traj_descente_svg-
 tex.pdf_tex")...executed.
 
 Package svg Info: Last page of `./svg-inkscape/traj_descente_svg-tex.pdf' is 1 
-on input line 122.
+on input line 121.
  (././svg-inkscape/traj_descente_svg-tex.pdf_tex
 File: ./svg-inkscape/traj_descente_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/traj_descente_svg-tex.pdf, page 1>
@@ -897,7 +897,7 @@ File: ./svg-inkscape/traj_descente_svg-tex.pdf Graphic file (type pdf)
 (./_minted/5615DE80BD4801F1288BB3CFA752E596.highlight.minted
 
 [3])
-Package svg Info: Calling Inkscape on input line 169.
+Package svg Info: Calling Inkscape on input line 168.
 runsystem(inkscape "speed.svg" -D --export-latex --export-filename="speed_svg-t
 ex.pdf")...executed.
 
@@ -910,7 +910,7 @@ runsystem(mv "speed_svg-tex.pdf_tex" "./svg-inkscape/speed_svg-tex.pdf_tex")...
 executed.
 
 Package svg Info: Last page of `./svg-inkscape/speed_svg-tex.pdf' is 1 on input
- line 169.
+ line 168.
  (././svg-inkscape/speed_svg-tex.pdf_tex
 File: ./svg-inkscape/speed_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/speed_svg-tex.pdf, page 1>
@@ -924,13 +924,7 @@ File: ./svg-inkscape/speed_svg-tex.pdf Graphic file (type pdf)
 
 [6] (./_minted/197691DFA1EDA0276CA3D4E8A351439E.highlight.minted)
 
-[7]
-\openout7 = `_5E0BE43A8BC44D647A97E66B3B044761.data.minted'.
-
-runsystem(latexminted clean  --timestamp 20250403004649 5E0BE43A8BC44D647A97E66
-B3B044761)...executed.
-
- (./ARE_Lou_Eouzan.aux)
+[7] (./ARE_Lou_Eouzan.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -946,10 +940,10 @@ Package rerunfilecheck Info: File `ARE_Lou_Eouzan.out' has not changed.
 (rerunfilecheck)             Checksum: 151CC8110D1309F5B6648091B823136F;2001.
  ) 
 Here is how much of TeX's memory you used:
- 20546 strings out of 475821
- 442005 string characters out of 5774996
- 1011161 words of memory out of 5000000
- 43093 multiletter control sequences out of 15000+600000
+ 20545 strings out of 475821
+ 441990 string characters out of 5774996
+ 1011142 words of memory out of 5000000
+ 43092 multiletter control sequences out of 15000+600000
  568686 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,12n,93p,690b,982s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -1,4 +1,4 @@
-% Created 2025-04-03 jeu. 00:46
+% Created 2025-04-29 mar. 18:12
 \documentclass[11pt]{article}
 \usepackage{amsmath}
 \usepackage{fontspec}
@@ -17,7 +17,6 @@
 \setdefaultlanguage{french}
 \usepackage[margin=2cm]{geometry}
 \usepackage{xcolor}
-\definecolor{darkblue}{rgb}{0.0, 0.0, 0.5}
 \usepackage{fontspec}
 \setmainfont{Liberation Serif}
 \usepackage{minted}
@@ -49,7 +48,7 @@
 \tableofcontents
 
 \section{Introduction}
-\label{sec:org3568ebd}
+\label{sec:org2fa46a3}
 
 Lors de l'avant dernière séance nous avons réalisé une prise vidéo que nous avons du analyser à l'aide du logiciel kinovéa. Via le logiciel,nous
 procèdons au tracking de la positions sur un axe x (horizontal) et un axe y (vertical) d'un point correspondant approximativement au centre de gravité
@@ -58,7 +57,7 @@ rapport est d'abord d'analyser les mesures obtenues pour en déduires certaines 
 d’immobilité, la vitesse d'escalade, le temps d'escalade et la hauteur du mur mais également de comparer l'efficacité de ce mode de mesure avec celui
 utilisée lors du rapport 1 où nous avions mesuré l'accélérations linéaire sans g.
 \section{Imports}
-\label{sec:orgabb9803}
+\label{sec:orge9ee1b5}
 
 \begin{minted}[]{python}
 from matplotlib import pyplot as plt
@@ -70,7 +69,7 @@ Ce code importe des bibliothèques python dont nous avons besoin. La bibliothèq
 représentation visuelle des données. Enfin les bibliothèque numpy et pandas nous mettent à disposition des structures de données et des fonctions
 associées pour stocker et analyser nos mesures.
 \section{Ouverture du fichier et extraction des colonnes}
-\label{sec:org68b4c91}
+\label{sec:org8fe3589}
 
 \begin{minted}[]{python}
 data = pd.read_csv("esca.csv", sep=";", decimal=",") 
@@ -83,7 +82,7 @@ La première ligne importe les données dans une variable data, ensuite les lign
 données dans une variable correspondante. Les variables x et y stockent la position de notre point sur l'axe horizontal et vertical. Enfin la variable
 time, elle contient les secondes correspondant au moment où chaque valeur de position a été mesurée.
 \section{Obtention de l'allure de la montée et de la descente}
-\label{sec:orgfebe702}
+\label{sec:org5083c4a}
 
 \begin{minted}[]{python}
 i_max = np.where(y == np.max(y))[0][-1]
@@ -102,7 +101,7 @@ plt.clf()
 \end{minted}
 
 \phantomsection
-\label{orga249ff6}
+\label{org7ef7d36}
 \begin{verbatim}
 3897
 \end{verbatim}
@@ -123,7 +122,7 @@ l'index 3897 et de l'index 3898 à la fin du tableau. C'est ce dont ce charge le
 \captionof{figure}{Tentative pour déterminer l'allure de la descente.}
 \end{center}
 \section{Tentative d'obtention de la vitesse}
-\label{sec:org1adc092}
+\label{sec:orgeb25ace}
 
 \begin{minted}[]{python}
 i = 0
@@ -146,7 +145,7 @@ print(np.mean(np.array(vitesses_par_secondes))*0.036) # vitesse moyenne en km/h
 \end{minted}
 
 \phantomsection
-\label{org4fb31fe}
+\label{orgb7313bf}
 \begin{verbatim}
 0.2571500349677964
 \end{verbatim}
@@ -170,13 +169,13 @@ du rapport précédent, pourrait être cohérente. Elle l'est en tout cas plus q
 \captionof{figure}{Vitesse mesurée au cours du temps lors de la montée.}
 \end{center}
 \section{Tentative d'obtention du temps d'escalade}
-\label{sec:orgbde7ee3}
+\label{sec:org750e059}
 \begin{minted}[]{python}
 print(time[i_max])
 \end{minted}
 
 \phantomsection
-\label{org8e4fc55}
+\label{orgba51354}
 \begin{verbatim}
 129.842
 \end{verbatim}
@@ -186,7 +185,7 @@ Pour mesurer le temps d'escalade il suffit tout simplement de regarder la valeur
 début quand nous avons atteint le point le plus haut sur l'axe vertical, c'est à dire le haut du mur. Que ce soit pour ce rapport, le rapport
 précédent ou le premier rapport, la mesure du temps était cohérente.
 \section{Calcul du ratio temps de mouvements sur temps total}
-\label{sec:orgb53298a}
+\label{sec:orgb78f9d8}
 
 \begin{minted}[]{python}
 def isclose(a, b, trsh):
@@ -207,7 +206,7 @@ print(index_deb, index_fin)
 \end{minted}
 
 \phantomsection
-\label{org124e2f6}
+\label{org5ce0578}
 \begin{verbatim}
 1159 1349
 \end{verbatim}
@@ -231,7 +230,7 @@ print(trsh)
 \end{minted}
 
 \phantomsection
-\label{orgbb8836a}
+\label{org22a75a1}
 \begin{verbatim}
 8.770730696971876
 \end{verbatim}
@@ -267,7 +266,7 @@ print(f"{round(((len(time[(np.array(mouvement_def))])*0.033)-0.033)/(time[3432])
 \end{minted}
 
 \phantomsection
-\label{org7ae3063}
+\label{orgbe572b5}
 \begin{verbatim}
 46.49 %
 \end{verbatim}
@@ -286,14 +285,14 @@ conclu que la méthode avec accéléromètre était donc plus efficace, mais cet
 un meilleur suivi de la trajectoire de mon centre de gravité le résultat parait plus cohérent. Nous povons donc supposer que, soit les résultat sont
 plus cohérent avec expèrience, mais on peut aussi supposer qu'il y ai une marge d'erreur systématique qui rend trop aléatoir la cohérence de ce résultat.
 \section{Tentative d'obtention de la hauteur escaladée}
-\label{sec:orgddf04c4}
+\label{sec:org18c28a6}
 
 \begin{minted}[]{python}
 print((np.mean(np.array(vitesses_par_secondes))/100)*(time[i_max]))
 \end{minted}
 
 \phantomsection
-\label{org669cd64}
+\label{org23a6765}
 \begin{verbatim}
 9.27468745563573
 \end{verbatim}
@@ -304,7 +303,7 @@ par 100 pour obtenir la vitesse en mètre par secondes. Nous multiplions la vite
 9,2 mètres. Ce résultats parait peu réaliste dans la mesure où dans le rapport précédent avait été mesuré 9.6 mètres pour la hauteur du mur, que je
 n'ai sur ce coup là pas escaladé en entier. Nous pouvons supposer une imprecision dans le tracking.
 \section{Conclusion}
-\label{sec:org9c90621}
+\label{sec:orga0bac7b}
 
 Dans ce rapport, nous avons mesuré la positions de mon centre de gravité dans un plan. De cette position et de son évolutions à travers le temps nous
 avons obtenus la vitesse, le temps d'escalade, le ratio temps de mouvements sur temps total et la hauteur du mur. l'imprécision potentielle du tracking

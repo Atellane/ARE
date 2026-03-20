@@ -1,5 +1,5 @@
-#+TITLE: Rapport d'analyse des données ARE 2025
 #+AUTHOR: Lou Eouzan
+#+TITLE: Rapport d'analyse des données ARE 2025
 #+LANGUAGE: fr
 #+LATEX_COMPILER: xelatex -shell-escape
 #+OPTIONS: tex:t latex:minted
@@ -7,8 +7,6 @@
 #+LATEX_HEADER: \setdefaultlanguage{french}
 #+LATEX_HEADER: \usepackage[margin=2cm]{geometry}
 #+LATEX_HEADER: \usepackage{xcolor}
-#+LATEX_HEADER: \definecolor{darkblue}{rgb}{0.0, 0.0, 0.5}
-#+MACRO: bleu @@latex:\textcolor{darkblue}{$1}@@
 #+LATEX_HEADER: \usepackage{fontspec}
 #+LATEX_HEADER: \setmainfont{Liberation Serif}
 #+LATEX_HEADER: \usepackage{minted}
